@@ -1,4 +1,4 @@
-//Імпортуємо стандартні функціональні інтерфейси
+package app;//Імпортуємо стандартні функціональні інтерфейси
 //Використаємо інтерфейс java.util.function.Function щоб перетворювати одне значення на інше (наприклад String->Integer)
 
 import java.util.function.Function;
@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
 //1. Анонімний клас для додавання
-//Створюємо змінну типу MathOperation з ім'ям addition,
+//Створюємо змінну типу app.MathOperation з ім'ям addition,
 //та присвоюємо їй об'єкт анонімного класу, який реалізує метод operate
         //Перевизначаємо метод operate, що приймає два аргументи a і b, та повертаємо результат додавання a + b
         MathOperation addition = new MathOperation() {
@@ -25,7 +25,7 @@ public class Main {
         System.out.println("Addition result (5 + 3): " + resultAddition);
 
 //2. Лямбда вираз для переведення рядка у верхній регістр
-        //Створюємо змінну типу StringManipulator з ім'ям toUpper
+        //Створюємо змінну типу app.StringManipulator з ім'ям toUpper
         //Присвоюємо їй лямбда-вираз, який приймає рядок s і повертає результат s.toUpperCase
         StringManipulator toUpper = s -> s.toUpperCase();
 //Викликаємо метод manipulate для рядка "hello world", зберігаємо результат у upperString
@@ -34,7 +34,7 @@ public class Main {
         System.out.println("Uppercase string: " + upperString);
 //3. Використання method reference до статичного методу
         //Створюємо об'єкт типу Function, який приймає String і повертає Integer
-        //Присвоюємо йому посилання на метод StringListProcessor.countUppercase
+        //Присвоюємо йому посилання на метод app.StringListProcessor.countUppercase
         Function<String, Integer> countUpper = StringListProcessor::countUppercase;
 //Викликаємо метод apply для рядка "HeLLo WoRLD!", результат зберігаємо в uppercaseCount,
 //та виводимо кількість великих літер

@@ -1,3 +1,5 @@
+package app;
+
 public class StringListProcessor {
     //Створюємо метод який приймає рядок і рахує великі літери
     public static int countUppercase(String s) {

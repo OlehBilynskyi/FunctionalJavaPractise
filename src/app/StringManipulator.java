@@ -1,3 +1,5 @@
+package app;
+
 @FunctionalInterface
 //Створюємо публічний інтерфейс для обробки рядків
 public interface StringManipulator {

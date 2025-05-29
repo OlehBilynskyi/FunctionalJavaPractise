@@ -1,3 +1,5 @@
+package app;
+
 //Оголошуємо функціональний інтерфейс (має лише один абстрактний метод)
 @FunctionalInterface
 public interface MathOperation {

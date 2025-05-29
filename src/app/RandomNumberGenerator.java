@@ -1,3 +1,5 @@
+package app;
+
 public class RandomNumberGenerator {
     //Створюємо статичний метод, який приймає межі min і max
     public static int generateRandomNumber(int min, int max) {
